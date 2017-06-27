@@ -3,19 +3,20 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { RoutesApp } from './app.route';
-import { LogosLoginModule } from 'logos-shared';
+import { Auth0Module } from 'angular2-cmps';
 import { MdlModule } from '@angular-mdl/core';
-
+import { SchoolagerAuthComponent } from './auth/auth.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SchoolagerAuthComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     MdlModule,
     RoutesApp,
-    LogosLoginModule
+    Auth0Module
   ],
   providers: [],
   bootstrap: [AppComponent]
