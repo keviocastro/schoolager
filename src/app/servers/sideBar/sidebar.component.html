@@ -1,1 +1,42 @@
-<h1>side bar</h1>
+<!-- Always shows a header, even in smaller screens. -->
+<div id="app-layout-header" class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+    <!-- PAGE HEADER-->
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">titu</span>
+            <div class="mdl-layout-spacer"></div>
+            <app-user-header></app-user-header>
+        </div>
+    </header>
+    <div class="progress page-loader" *ngIf="loading">
+        <div class="indeterminate"></div>
+    </div>
+    <!--SIDE BAR DRAWER-->
+    <div class="mdl-layout__drawer container-box next-class">
+        <div class="flex-box drawer-heading">
+            <h5 class="heading-light">tmc</h5>
+        </div>
+        <div class="scroll-main">
+            <div class="scroll-child">
+                <li>liiii</li>
+                <!--  CLASS STUDENTS -->
+                <!--<ul *ngIf="schoolClass && schoolClass.students" class="list-students">
+                    <li *ngFor="let student of schoolClass.students" [ngClass]="student.click ? 'active' : ''">
+                        <a routerLink="/student-info/{{schoolClass.id}}/{{student.id}}" (click)="clickedOnStudent(student)">
+                            <div class="flex-box">
+                                <img class="collapsible-clickable user-avatar flex-item" src="{{student.person.avatarUrl}}" />
+                                <div class="user-data">
+                                    <span class="item-expanded pull-left name  custom-h16 heading-light">{{student.person.name}}</span>
+                                    <span class="item-expanded pull-left info custom-h16"> {{schoolClass.grade.name}} {{schoolClass.identifier}} </span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>-->
+            </div>
+        </div>
+    </div>
+    <main class="mdl-layout__content">
+        
+    </main>
+</div>

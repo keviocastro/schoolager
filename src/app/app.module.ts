@@ -6,22 +6,20 @@ import { RoutesApp } from './app.route';
 import { Auth0Module } from 'angular2-cmps';
 import { MdlModule } from '@angular-mdl/core';
 import { SchoolagerAuthComponent } from './auth/auth.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import { UserHeaderComponent } from './toolbar/user-header/user-header.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SchoolagerAuthComponent,
-    ToolbarComponent,
-    UserHeaderComponent
+    SchoolagerAuthComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     MdlModule,
     RoutesApp,
-    Auth0Module
+    Auth0Module,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

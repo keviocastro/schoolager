@@ -1,6 +1,5 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SchoolagerAuthComponent } from './auth/auth.component';
 
 const appRoutes: Routes = [
@@ -9,16 +8,10 @@ const appRoutes: Routes = [
     component: SchoolagerAuthComponent
   },
   {
-    path: '',
-    component: ToolbarComponent,
-    children: [
-      {
-        path: 'server',
-        loadChildren: './servers/server.module#ServerModule'
-      }
-    ]
+    path: 'server',
+    loadChildren: './servers/server.module#ServerModule'
   },
-  { path: '', redirectTo: 'auth', pathMatch: 'full' },
+  { path: '', redirectTo: 'server', pathMatch: 'full' },
   //   { path: '**', component: NotFoundComponent },
 ];
 
