@@ -1,0 +1,129 @@
+
+/* DROPDOWN USER MENU */
+.nav-bar-user-menu {
+	padding: 0px;
+
+	i.material-icons {
+		color: #ff9800;
+		line-height: 40px;
+
+		// Change icon size to match all link icons
+		@media (max-width: 1024px) {
+			font-size: 35px;
+		}
+	}
+
+	mdl-menu-item {
+
+		height: 40px;
+		line-height: 40px;
+		display: flex;
+
+		div {
+			height: 40px;
+			line-height: 40px;
+
+			&.text {
+				padding-left: 10px;
+			}			
+		}
+
+
+		&.app-link {
+			display: none;
+			@media (max-width: 1024px) {
+				display: block;
+			}
+			img {
+				width: 32px;
+				height: 32px;
+				margin: 0px 0px 0px 0px;
+			}
+			.app-name {
+				padding-left: 10px;
+				line-height: 40px;
+			}
+		}
+
+	}
+
+}
+
+
+/* OPENS APP MENU CONTAINER */
+.app-list-menu {
+	display: block;
+    @media (max-width: 1024px) {
+    	display: none;
+    }
+}
+
+/* APP MENU CONTAINER */
+.app-menu-container {
+	background-color: #fff;
+	width: 500px;
+	height: 200px;
+	box-shadow: -3px 8px 50px 5px rgba(0, 0, 0, 0.19);
+	padding: 35px;
+	position: fixed;
+	top: 100px;
+	left: 100px;
+	border-radius: 3px;
+	z-index: 999;
+	display: none;
+
+	&.show {
+		display: block;
+	}
+
+    @media (max-width: 1024px) {
+    	display: none;
+    }
+
+	.app {
+		margin: 0px 20px 0px 20px;
+		padding: 0px;
+		width: 100px;
+		float: left;
+		cursor: pointer;
+
+
+		.img img {
+			width: 100px;
+		}
+
+		.name {
+			font-size: 15px;
+			font-weight: normal;
+			line-height: 1.33;
+			text-align: center;
+			color: rgba(0, 0, 0, 0.87);
+
+			margin: 7px 0px 23px 0px;			
+		}
+	}
+
+	.clear {
+		clear: both;
+	}
+}
+
+/* APP MENU MODAL */
+.app-menu-modal {
+	position: fixed;
+	display: none;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(0, 0, 0, .45);
+	z-index: 999;
+
+	&.show {
+		display: block;
+	}
+}
+.user-avatar{
+	object-fit: cover;
+	background-color: white;
+}

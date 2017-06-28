@@ -6,10 +6,15 @@ import { RoutesApp } from './app.route';
 import { Auth0Module } from 'angular2-cmps';
 import { MdlModule } from '@angular-mdl/core';
 import { SchoolagerAuthComponent } from './auth/auth.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { UserHeaderComponent } from './toolbar/user-header/user-header.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    SchoolagerAuthComponent
+    SchoolagerAuthComponent,
+    ToolbarComponent,
+    UserHeaderComponent
   ],
   imports: [
     BrowserModule,

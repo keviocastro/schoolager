@@ -1,0 +1,64 @@
+<div class="flex-box">
+	<!-- APPS LIST -->
+	<div class="flex-item app-list-menu" (window:click)="click($event)">
+		<button id="menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon app-list-menu-btn">
+			<i class="material-icons">apps</i>
+		</button>
+	</div>
+	<!-- USER NAME AND PROFILE / HIDE IN SMALL SCREEN -->
+	<div class="flex-item">
+		<span class="mdl-layout-title user-name mdl-cell--hide-phone">{{userProfile?.nickname}}</span>
+	</div>
+	<div class="flex-item">
+		<a class='link-only' routerLink="/profile"><img class="user-avatar mdl-cell--hide-phone" src="{{userProfile?.picture}}"/></a>
+	</div>
+	<!-- DROPDOWN USER MENU -->
+	<div class="flex-item">
+		<button mdl-button mdl-button-type="icon" #appBtn="mdlButton" (click)="appMenu.toggle($event, appBtn)">
+			<mdl-icon>more_vert</mdl-icon>
+		</button>
+		<mdl-menu #appMenu="mdlMenu" mdl-menu-position="bottom-right" class="nav-bar-user-menu">
+			<mdl-menu-item mdl-ripple routerLink="/class-daily" class="app-link">
+				<img src="/assets/img/app-icons/icone-diario-escolar.png"> <span class="app-name">Servidores</span>
+			</mdl-menu-item>
+			<!--<mdl-menu-item mdl-ripple routerLink="/lesson-syllabus" class="app-link">
+				<img src="/assets/img/app-icons/icone-plano-escolar.png"> <span class="app-name">Planos de aula</span>
+			</mdl-menu-item>
+			<mdl-menu-item mdl-ripple routerLink="/class-grades" class="app-link">
+				<img src="/assets/img/app-icons/icone-relatorio-turmas.png"> <span class="app-name">Notas e Relatórios</span>
+			</mdl-menu-item>-->
+			<mdl-menu-item mdl-ripple (click)="logout()">
+				<div>
+					<i class="material-icons">power_settings_new</i>
+				</div>
+				<div class="text">
+					Sair
+				</div>
+			</mdl-menu-item>
+		</mdl-menu>
+	</div>
+</div>
+
+<!-- APP MENU MODAL DESKTOP -->
+<div [ngClass]="{'app-menu-container':true, 'show': showAppMenu}" [style.left]="left+'px'" [style.top]="top+'px'">
+	<div class="app">
+		<a class="link-only" routerLink="/class-daily">
+			<div class="img"><img src="/assets/img/app-icons/icone-diario-escolar.png"></div>
+			<div class="name"> Servidores </div>
+		</a>
+	</div>
+	<!--<div class="app">
+		<a class="link-only" routerLink="/lesson-syllabus">
+			<div class="img"><img src="/assets/img/app-icons/icone-plano-escolar.png"></div>
+			<div class="name"> Planos de aula </div>
+		</a>
+	</div>
+	<div class="app">
+		<a class="link-only" routerLink="/class-grades">
+			<div class="img"><img src="/assets/img/app-icons/icone-relatorio-turmas.png"></div>
+			<div class="name"> Notas e Relatórios </div>
+		</a>
+	</div>-->
+	<div class="clear"></div>
+</div>
+<div [ngClass]="{'app-menu-modal':true, 'show': false}"></div>
