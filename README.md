@@ -14,20 +14,21 @@ Angular cli. Veja https://github.com/angular/angular-cli#installation
 `npm install`
 `ng serve`
 
-## Outros comandos
+## Desenvolvimento
 
-### Gerar esqueleto de código
+
+### Comando para gerar esqueleto de código
 
 `ng generate component component-name` para gerar um novo componente. Você também poode usar `ng generate directive|pipe|service|class|module`.
 
-### Compilar
+### Comando para compilar
 
 `ng build`
 
-### Executar testes unitários
+### Para executar testes unitários
 
 `ng test`
 
-### Executar testes end-to-end
+### Para executar testes end-to-end
 
 `ng e2e` 
