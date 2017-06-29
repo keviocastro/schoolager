@@ -1,7 +1,6 @@
 # Schoolager
 
 [![CircleCI](https://circleci.com/gh/keviocastro/schoolager/tree/master.svg?style=svg&circle-token=2fc68f0a1ae417dbb7d54e2f939ef8f52258a9eb)](https://circleci.com/gh/keviocastro/schoolager/tree/master)
-[![Build Status](https://semaphoreci.com/api/v1/projects/c7852e5e-8752-4471-8527-c7f502bd7237/1392230/badge.svg)](https://semaphoreci.com/keviocastro/schoolager)
 
 Schoolager é um software de gestão dados educacionais: registros administrativos, contratos, professores, aulas e varios outros.
 
