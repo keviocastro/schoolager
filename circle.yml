@@ -3,6 +3,13 @@ machine:
   node:
     version: 6.11
 
+dependencies:
+  pre:
+    - curl -L -o google-chrome.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    - sudo dpkg -i google-chrome.deb
+    - sudo sed -i 's|HERE/chrome\"|HERE/chrome\" --disable-setuid-sandbox|g' /opt/google/chrome/google-chrome
+    - rm google-chrome.deb
+
 compile:
   override:
     -  ./node_modules/@angular/cli/bin/ng build -prod
@@ -11,3 +18,9 @@ test:
   override:
     -  ./node_modules/@angular/cli/bin/ng test -w false
     -  ./node_modules/@angular/cli/bin/ng e2e -w false
+
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync dist s3://schoolager-master/ --delete
