@@ -6,15 +6,21 @@ import { RoutesServer } from './server.route';
 import { SidebarComponent } from './sideBar/sidebar.component';
 import { MdlModule } from '@angular-mdl/core';
 import { SharedModule } from '../shared/shared.module';
+import { RegisterServerComponent } from './register-server/registerServer.component';
+import { MaterializeModule } from "angular2-materialize";
+
 @NgModule({
   declarations: [
-    SidebarComponent
+    SidebarComponent,
+    RegisterServerComponent
+    
   ],
   imports: [
     CommonModule,
     RoutesServer,
     MdlModule,
-    SharedModule
+    SharedModule,
+    MaterializeModule
   ],
   providers: []
 })

@@ -293,8 +293,7 @@ h6 {
     li:hover,
     li.active {
         background-color: var(--tangerine);
-        span,
-        a {
+        span,a,h1,h2,h3,h4,h5,p{
             color: #ffffff !important;
         }
     }
@@ -866,6 +865,17 @@ ul.flat-tabs.tabs {
     transform: translateX(-280px);
     top: 64px;
     z-index: 5 !important;
+    padding: 0px;
+    li{
+        padding: 10px;
+        text-align: center;
+    }
+    li.active {
+        background-color: var(--tangerine);
+        span,a,h1,h2,h3,h4,h5,p{
+            color: #ffffff !important;
+        }
+    }
 }
 
 
