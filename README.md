@@ -1,33 +1,34 @@
 # Schoolager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Schoolager
-
 [![CircleCI](https://circleci.com/gh/keviocastro/schoolager/tree/master.svg?style=svg&circle-token=2fc68f0a1ae417dbb7d54e2f939ef8f52258a9eb)](https://circleci.com/gh/keviocastro/schoolager/tree/master)
 [![Build Status](https://semaphoreci.com/api/v1/projects/c7852e5e-8752-4471-8527-c7f502bd7237/1392230/badge.svg)](https://semaphoreci.com/keviocastro/schoolager)
 
-## Build
+Schoolager é um software de gestão dados educacionais: registros administrativos, contratos, professores, aulas e varios outros.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Para iniciar
 
-## Running unit tests
+Primeiro você precisa ter instalado:
+Nodeljs >= 6.11.0. Veja https://nodejs.org/en/download/package-manager/
+Angular cli. Veja https://github.com/angular/angular-cli#installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`git clone`
+`npm install`
+`ng serve`
 
-## Running end-to-end tests
+## Outros comandos
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+### Gerar esqueleto de código
 
-## Further help
+`ng generate component component-name` para gerar um novo componente. Você também poode usar `ng generate directive|pipe|service|class|module`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Compilar
+
+`ng build`
+
+### Executar testes unitários
+
+`ng test`
+
+### Executar testes end-to-end
+
+`ng e2e` 
