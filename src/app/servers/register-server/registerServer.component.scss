@@ -1,0 +1,15 @@
+input {
+    height: inherit;
+}
+
+.table {
+    display: flex;
+    @media (max-width: 479px) {
+        display: block;
+    }
+}
+
+tbody {
+    width: 100%;
+    display: table;
+}

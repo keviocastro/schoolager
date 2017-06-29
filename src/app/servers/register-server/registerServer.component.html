@@ -1,0 +1,27 @@
+<div class="mdl-cell mdl-cell--12-col card-box bg-white">
+    <div class="table">
+        <tr>
+            <td>
+                <label>nome</label>
+                <input type="text">
+            </td>
+            <td>
+                <label>CPF</label>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <!--<td>-->
+            <label>Matricula</label>
+            <input type="text">
+            <!--</td>-->
+        </tr>
+        <h4>Contrato</h4>
+        <tr>
+            <label>Matricula</label>
+            <select materialize="material_select" [materializeSelectOptions]="selectOptions">
+  <option *ngFor="let option of selectOptions" [value]="option.value">{{option.name}}</option>
+</select>
+        </tr>
+    </div>
+</div>
