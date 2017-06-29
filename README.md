@@ -6,7 +6,8 @@ Schoolager é um software de gestão dados educacionais: registros administrativ
 
 ## Para iniciar
 
-Primeiro você precisa ter instalado:
+Pré-requisitos:
+
 Nodeljs >= 6.11.0. Veja https://nodejs.org/en/download/package-manager/
 Angular cli. Veja https://github.com/angular/angular-cli#installation
 
@@ -14,8 +15,9 @@ Angular cli. Veja https://github.com/angular/angular-cli#installation
 `npm install`<br>
 `ng serve`<br>
 
-## Desenvolvimento
+## Guia de desenvolvimento
 
+@todo
 
 ### Comando para gerar esqueleto de código
 
