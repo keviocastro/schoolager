@@ -1,0 +1,13 @@
+## Customize the test machine
+machine:
+  node:
+    version: 6.11
+
+compile:
+  override:
+    -  ./node_modules/@angular/cli/bin/ng build -prod
+
+test:
+  override:
+    -  ./node_modules/@angular/cli/bin/ng test -w false
+    -  ./node_modules/@angular/cli/bin/ng e2e -w false
