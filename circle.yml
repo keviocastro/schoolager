@@ -18,3 +18,9 @@ test:
   override:
     -  ./node_modules/@angular/cli/bin/ng test -w false
     -  ./node_modules/@angular/cli/bin/ng e2e -w false
+
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync dist s3://schoolager-master/ --delete
