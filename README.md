@@ -8,8 +8,9 @@ Schoolager é um software de gestão dados educacionais: registros administrativ
 
 Pré-requisitos:
 
-Nodeljs >= 6.11.0. Veja https://nodejs.org/en/download/package-manager/
-Angular cli. Veja https://github.com/angular/angular-cli#installation
+[Nodeljs >= 6](https://nodejs.org/en/download/package-manager/) <br>
+[Angular cli.](https://github.com/angular/angular-cli#installation)
+Você pode optar por não instalar o Angular cli. Para isso substitua o comando `ng serve` por `./node_modules/@angular/cli/bin/ng serve`
 
 `git clone`<br>
 `npm install`<br>
@@ -21,8 +22,8 @@ Angular cli. Veja https://github.com/angular/angular-cli#installation
 
 ### Comando para gerar esqueleto de código
 
-`ng generate component component-name` para gerar um novo componente.<br> 
-Você também poode usar `ng generate directive|pipe|service|class|module`.
+`ng generate component component-name` para gerar um novo componente. <br> 
+Você também poode usar `ng generate directive|pipe|service|class|module`. <br>
 Veja outros na documentação: https://github.com/angular/angular-cli#usage
 
 ### Comando para compilar
