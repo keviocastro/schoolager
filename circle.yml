@@ -5,9 +5,9 @@ machine:
 
 compile:
   override:
-    -  ./node_modules/@angular/cli/ng build -prod
+    -  ./node_modules/@angular/cli/bin/ng build -prod
 
 test:
   override:
-    -  ./node_modules/@angular/cli/ng test -w false
-    -  ./node_modules/@angular/cli/ng e2e -w false
+    -  ./node_modules/@angular/cli/bin/ng test -w false
+    -  ./node_modules/@angular/cli/bin/ng e2e -w false
