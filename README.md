@@ -12,9 +12,11 @@ Pré-requisitos:
 [Angular cli.](https://github.com/angular/angular-cli#installation)
 Você pode optar por não instalar o Angular cli. Para isso substitua o comando `ng serve` por `./node_modules/@angular/cli/bin/ng serve`
 
-`git clone`<br>
-`npm install`<br>
-`ng serve`<br>
+```console 
+git clone && cd schoolager
+npm install
+ng serve
+```
 
 ## Guia de desenvolvimento
 
