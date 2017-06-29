@@ -10,16 +10,18 @@ Primeiro você precisa ter instalado:
 Nodeljs >= 6.11.0. Veja https://nodejs.org/en/download/package-manager/
 Angular cli. Veja https://github.com/angular/angular-cli#installation
 
-`git clone`
-`npm install`
-`ng serve`
+`git clone`<br>
+`npm install`<br>
+`ng serve`<br>
 
 ## Desenvolvimento
 
 
 ### Comando para gerar esqueleto de código
 
-`ng generate component component-name` para gerar um novo componente. Você também poode usar `ng generate directive|pipe|service|class|module`.
+`ng generate component component-name` para gerar um novo componente.<br> 
+Você também poode usar `ng generate directive|pipe|service|class|module`.
+Veja outros na documentação: https://github.com/angular/angular-cli#usage
 
 ### Comando para compilar
 
