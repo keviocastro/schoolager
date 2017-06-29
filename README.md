@@ -10,6 +10,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
 
+## Schoolager
+
+[![CircleCI](https://circleci.com/gh/keviocastro/schoolager/tree/master.svg?style=svg&circle-token=2fc68f0a1ae417dbb7d54e2f939ef8f52258a9eb)](https://circleci.com/gh/keviocastro/schoolager/tree/master)
+[![Build Status](https://semaphoreci.com/api/v1/projects/c7852e5e-8752-4471-8527-c7f502bd7237/1392230/badge.svg)](https://semaphoreci.com/keviocastro/schoolager)
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
