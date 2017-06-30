@@ -24,7 +24,7 @@ ng serve
 
 ### Command to generate code skeleton
 
-`ng generate component component-name` para gerar um novo componente. <br> 
+`ng generate component component-name` To generate a new component. <br> 
 You can also use `ng generate directive|pipe|service|class|module`. <br>
 
 ### Command to complie
