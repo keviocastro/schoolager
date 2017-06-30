@@ -2,15 +2,15 @@
 
 [![CircleCI](https://circleci.com/gh/keviocastro/schoolager/tree/master.svg?style=svg&circle-token=2fc68f0a1ae417dbb7d54e2f939ef8f52258a9eb)](https://circleci.com/gh/keviocastro/schoolager/tree/master)
 
-Schoolager é um software de gestão dados educacionais: registros administrativos, contratos, professores, aulas e varios outros.
+Schoolager is an educational data management software: administrative records, contracts, teachers, classes and several others.
 
-## Para iniciar
+## To start
 
-Pré-requisitos:
+Prerequisites:
 
 [Nodeljs >= 6](https://nodejs.org/en/download/package-manager/) <br>
 [Angular cli.](https://github.com/angular/angular-cli#installation)
-Você pode optar por não instalar o Angular cli. Para isso substitua o comando `ng serve` por `./node_modules/@angular/cli/bin/ng serve`
+You can choose not to install the Angular cli. To do this replace the command `ng serve` with` ./node_modules/@angular/cli/bin/ng serve`
 
 ```console 
 git clone && cd schoolager
@@ -18,24 +18,25 @@ npm install
 ng serve
 ```
 
-## Guia de desenvolvimento
+## Developer guide
 
 @todo
 
-### Comando para gerar esqueleto de código
+### Command to generate code skeleton
 
 `ng generate component component-name` para gerar um novo componente. <br> 
-Você também poode usar `ng generate directive|pipe|service|class|module`. <br>
-Veja outros na documentação: https://github.com/angular/angular-cli#usage
+You can also use `ng generate directive|pipe|service|class|module`. <br>
 
-### Comando para compilar
+### Command to complie
 
 `ng build`
 
-### Para executar testes unitários
+### You can run the tests with
 
 `ng test`
 
-### Para executar testes end-to-end
+### Run tests end-to-end
 
-`ng e2e` 
+`ng e2e`
+
+See more in the documentation: https://github.com/angular/angular-cli#usage
