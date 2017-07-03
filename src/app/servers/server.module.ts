@@ -7,13 +7,14 @@ import { SidebarComponent } from './sideBar/sidebar.component';
 import { MdlModule } from '@angular-mdl/core';
 import { SharedModule } from '../shared/shared.module';
 import { RegisterServerComponent } from './register-server/registerServer.component';
+import { ServerModulationComponent } from './register-server/serverModulation.component';
 import { MaterializeModule } from "angular2-materialize";
 
 @NgModule({
   declarations: [
     SidebarComponent,
     RegisterServerComponent
-    
+    ,ServerModulationComponent
   ],
   imports: [
     CommonModule,

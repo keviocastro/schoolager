@@ -52,7 +52,7 @@ export class SchoolagerAuthComponent {
   private redirectUser() {
     let userData = localStorage.getObject('userData');
     let targetUrl = localStorage.getItem('targetUrl')
-    let url = targetUrl ? targetUrl : "/class-daily";
+    let url = targetUrl ? targetUrl : "";
     localStorage.removeItem('targetUrl');
     if (userData && userData.person) {
       this.router.navigateByUrl(url);
