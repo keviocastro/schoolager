@@ -1,66 +1,67 @@
 <div class="mdl-cell mdl-cell--12-col card-box bg-white">
-    <h5>Cadastrar servidor</h5>
-    <div class="table">
-        <tr>
-            <td>
-                <label>nome</label>
-                <input type="text">
-            </td>
-            <td>
-                <label>CPF</label>
-                <input type="text">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>Matricula</label>
-                <input class="same-line" type="text">
-            </td>
-        </tr>
-        <h5>Contrato</h5>
-        <tr>
-            <td style="display: flex;">
-                <label style="padding: 10px;">Tipo de contrato</label>
-                <div class='select'>
-                    <select materialize="material_select" [materializeSelectOptions]="selectOptions">
+  <h5>Cadastrar servidor</h5>
+  <div class="table">
+    <tr>
+      <td>
+        <label>CPF</label>
+        <input type="text">
+      </td>
+      <td>
+        <label>Matricula</label>
+        <input type="text">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Nome</label>
+        <input type="text">
+      </td>
+    </tr>
+    <h5>Contrato</h5>
+    <tr>
+      <td style="display: inline;">
+        <label style="padding: 10px;">Tipo de contrato</label>
+        <div class='select'>
+          <select materialize="material_select" [materializeSelectOptions]="selectOptions">
                     <option *ngFor="let option of selectOptions" [value]="option.value">{{option.name}}</option>
                 </select>
-                </div>
-            </td>
-            <td>
-                <label>Carga horária semanal</label>
-                <input style="width: 20px;" type="text">H
-            </td>
-        </tr>
-        <tr>
-            <td style="display: flex;">
-                <label style="padding: 10px;">Cargo</label>
-                <div>
-                    <select materialize="material_select" [materializeSelectOptions]="selectOptions">
+        </div>
+      </td>
+      <td>
+        <label>Carga horária semanal</label>
+        <input style="width: 20px;" type="text">H
+      </td>
+    </tr>
+    <tr>
+      <td style="display: inline;">
+        <label style="padding: 10px;">Cargo</label>
+        <div class='select'>
+          <select materialize="material_select" [materializeSelectOptions]="selectOptions">
                     <option *ngFor="let option of selectOptions" [value]="option.value">{{option.name}}</option>
                 </select>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>Data de inicio</label>
-                <input type="text">
-            </td>
-            <td>
-                <label>Data de término</label>
-                <input type="text">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                
-            </td>
-            <td>
-                <button style="float: right;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Data de inicio</label>
+        <input type="text">
+      </td>
+      <td>
+        <label>Data de término</label>
+        <input type="text">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td>
+        <button style="float: right;" (click)='moduleShow = true' class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
   Cadastrar
 </button>
-            </td>
-        </tr>
-    </div>
+      </td>
+    </tr>
+  </div>
 </div>
+
+<server-modulation-register *ngIf='moduleShow'></server-modulation-register>

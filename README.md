@@ -1,33 +1,42 @@
 # Schoolager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Schoolager
-
 [![CircleCI](https://circleci.com/gh/keviocastro/schoolager/tree/master.svg?style=svg&circle-token=2fc68f0a1ae417dbb7d54e2f939ef8f52258a9eb)](https://circleci.com/gh/keviocastro/schoolager/tree/master)
-[![Build Status](https://semaphoreci.com/api/v1/projects/c7852e5e-8752-4471-8527-c7f502bd7237/1392230/badge.svg)](https://semaphoreci.com/keviocastro/schoolager)
 
-## Build
+Schoolager is an educational data management software: administrative records, contracts, teachers, classes and several others.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## To start
 
-## Running unit tests
+Prerequisites:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[Nodeljs >= 6](https://nodejs.org/en/download/package-manager/) <br>
+[Angular cli.](https://github.com/angular/angular-cli#installation)
+You can choose not to install the Angular cli. To do this replace the command `ng serve` with` ./node_modules/@angular/cli/bin/ng serve`
 
-## Running end-to-end tests
+```console 
+git clone && cd schoolager
+npm install
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+## Developer guide
 
-## Further help
+@todo
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Command to generate code skeleton
+
+`ng generate component component-name` To generate a new component. <br> 
+You can also use `ng generate directive|pipe|service|class|module`. <br>
+
+### Command to complie
+
+`ng build`
+
+### You can run the tests with
+
+`ng test`
+
+### Run tests end-to-end
+
+`ng e2e`
+
+See more in the documentation: https://github.com/angular/angular-cli#usage

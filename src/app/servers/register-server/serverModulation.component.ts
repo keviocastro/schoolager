@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'register-server',
-  templateUrl: 'registerServer.component.html',
-  styleUrls: ['registerServer.component.scss']
+  selector: 'server-modulation-register',
+  templateUrl: 'serverModulation.component.html',
+  styleUrls: ['serverModulation.component.scss']
 })
-export class RegisterServerComponent {
+export class ServerModulationComponent {
   constructor() { }
   selectOptions = [
     {name : 'jales', value : 2},
     {name : 'vitoria', value : 1},
     {name : 'preta', value : 3}
   ]
-
-  moduleShow = false;
  }
